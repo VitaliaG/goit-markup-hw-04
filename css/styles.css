@@ -159,8 +159,9 @@ img {
   height: 600px;
 
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.6),
-      rgba(47, 48, 58, 0.6)
+      90deg,
+      rgba(47, 48, 58, 0.6) 50%,
+      rgba(47, 48, 58, 0.6) 100%
     ),
     url("../img/img-studio/bghero.jpg");
   background-repeat: no-repeat;
@@ -198,6 +199,7 @@ img {
   color: var(--white-color);
   align-items: center;
   text-align: center;
+  line-height: 30px;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px var(--box-shadow-color--);
@@ -335,6 +337,29 @@ img {
 .staff-function {
   color: var(--secondary-text-color);
   margin-bottom: 30px;
+}
+
+.regular-customer {
+  width: 1600px;
+  margin: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customer-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.customer-item {
+  width: calc((100%-30px * 5) / 6);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.customer-item:not(:nth-child(6n)) {
+  margin-right: 30px;
 }
 
 .footer {
